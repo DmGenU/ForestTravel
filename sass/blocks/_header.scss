@@ -1,0 +1,130 @@
+.header {
+    position: relative;
+    height: 800px;
+    padding-top: 50px;
+    background-color: #265847;
+    background-image: url('./../img/header/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+
+    height: 100px;
+    background-color: #265847;
+    background-image: url('./../img/header/header-bg-small.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.header-nav {
+    font-size: 22px;
+}
+
+.header-nav-list {
+    display: flex;
+}
+
+.header-nav-list-item {
+    margin-right: 50px;
+    transition: transform 0.25s ease-in-out;  
+}
+
+.header-nav-list-item:last-child {
+    margin-right: 0;
+}
+
+.header-nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav-list-item:hover {
+    transform: translateY(-3px);
+}
+
+.header-nav-link::after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #fff;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.header-nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    width: 1170px;
+    text-align: center;
+}
+
+.header-title {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.header-content p{
+    font-size: 24px;
+}
+
+.header-scroll {
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 34px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-scroll::after {
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+    transform: translate(-51%);
+    content: "";
+    display: block;
+    width: 20px;
+    height: 25px;
+    background-image: url('./../img/header/arrow-down.svg');
+}
+
+.header-scroll::before {
+    position: absolute;
+    transform: translateX(132%);
+    bottom: 0;
+    content: "";
+    display: block;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    transition: transform 0.1s ease-in-out;
+}
+
+.header-scroll:active:before {
+    transform: translateX(132%) scale(3);
+    opacity: 0.25;
+}

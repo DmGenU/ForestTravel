@@ -1,0 +1,34 @@
+@media (max-width: 899px) {
+
+    .inner-page.contacts-page {
+        padding-bottom: 40px;
+    }
+
+    .contacts-header {
+        margin-bottom: 30px;
+    }
+
+    .contacts-title {
+        font-size: 42px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-block {
+        width: 100%;
+    }
+
+    .form {
+        padding: 30px;
+    }
+
+    .form-group:last-of-type {
+        margin-bottom: 31px;
+    }
+
+    .form .button {
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 899px) {
+
+    .inner-page.treking-page {
+        padding-top: 20px;
+    }
+
+    .row-article {
+        flex-direction: column-reverse;
+    }
+
+    .article {
+        line-height: 1.61;
+    }
+
+    .article-nav {
+        padding-top: 43px;
+        width: 100%;
+    }
+
+    .article-nav-title {
+        margin-bottom: 20px;
+    }
+
+    .article h1 {
+        font-size: 42px;
+    }
+
+    .article h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    } 
+    
+    .article h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .article h4, .article h5, .article h6 {
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+
+    .article img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .article p {
+        font-size: 16px;
+    }
+
+}

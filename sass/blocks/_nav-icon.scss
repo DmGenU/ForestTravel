@@ -1,0 +1,88 @@
+// Ширина и высота линий в иконке
+$lineWidth: 32.5px;
+$lineHeight: 4px;
+
+// Ширина и высота обертки для клика
+$width: $lineWidth;
+$height: $lineHeight*3+11px;
+
+
+.nav-icon {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    width: $width;
+    height: $height;
+    /* background-color: red; */
+
+    cursor: pointer;
+    z-index: 2;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        display: flex;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    display: none;
+    width: $lineWidth;
+    height: $lineHeight;
+    background-color: #fff;
+    border-radius: 2px;
+    z-index: 2;
+
+    transition: background-color 0.2s linear;
+
+    &::before, &::after {
+        content: "";
+    
+        position: absolute;
+        left: 0;
+        
+        width: $lineWidth;
+        height: $lineHeight;
+        border-radius: 2px;
+        background-color: #fff;
+    
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::before {
+        top: - ($lineHeight+5.5px);
+    }
+
+    &::after {
+        top: $lineHeight+5.5px;
+    }
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        display: block;
+    }
+}
+
+/* active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    position: fixed;
+
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+    
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

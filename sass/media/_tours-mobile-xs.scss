@@ -1,0 +1,33 @@
+@media (max-width: 599px) {
+
+    .inner-tours-header {
+        margin-bottom: 30px;
+        line-height: 1;
+    }
+
+    .inner-tours-title {
+        font-size: 28px;
+    }
+
+    .cards-row-top, .cards-row-bottom, .cards-row-bottom-column {
+        row-gap: 20px;
+    }
+
+    .card-title-wrapper {
+        padding: 0 15px;
+        height: 50px;
+    }
+
+    .cards-row-top {
+        margin-bottom: 20px;
+    }
+
+    .card-free-tours, .cars-extreme-rest, .card-incredible-adventure, .card-trekking-hike, .card-exotic-jungle {
+        width: 290px;   
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+}
